@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: Figtree, 'Inter', sans-serif;
     box-sizing: border-box;
     font-style: normal;
     cursor: url("images/amplihire-logo-cursor.svg"), auto;
@@ -88,7 +88,7 @@ header {
 .hero-section{
     display: flex;
     flex-flow: row;
-    width: 100vw;
+    width: 100%;
     height: auto;
     min-height: 100vh;
     overflow-x: hidden;
@@ -101,7 +101,7 @@ header {
     width: 50%;
     align-items: center;
     z-index: 2;
-    padding: 0 1.5vw 0 6.5vw;
+    padding: 0 1.5vw 0 7vw;
     display: flex;
 }
 
@@ -213,8 +213,12 @@ header {
 }
 
 .contact-link-big{
-    border: 3px solid white;
+    border: 2px solid white;
     padding: 2.5vw 3.6vw;
+}
+
+.transparent-background {
+    background: transparent;
 }
 
 .contact-link.contact-link-big span{
@@ -304,7 +308,7 @@ header {
 }
 
 .screen-section{
-    width: 100vw;
+    width: 100%;
     height: 100%;
     background: #FFFFFF;
     position: relative;
@@ -315,7 +319,7 @@ header {
     display: flex;
     flex-flow: column;
     gap: 1.38vw;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -386,8 +390,8 @@ header {
 }
 
 .features-section{
-    width: 100vw;
-    padding: 7.4vw 6.94vw 0;
+    width: 100%;
+    padding: 7.4vw 7vw 0;
     overflow-x: hidden;
 }
 
@@ -397,6 +401,126 @@ header {
 
 .section-white{
     background: #FFFFFF;
+}
+
+.overview-section {
+    width: 100%;
+    padding: 7.4vw 7vw 7.4vw;
+}
+
+.overview-section-header {
+    width: max-content;
+    background: linear-gradient(90deg, #5631DE 0%, #C748B8 49.5%, #ED7982 99%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 6.94vw;
+}
+
+.overview-section-header-title {
+    font-size: 3.75vw;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 0.76vw;
+}
+
+.overview-section-header-text {
+    width: 60%;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.45;
+}
+
+.overview-section-header-title span{
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.overview-section-content {
+    display: flex;
+    gap: 1.875vw;
+}
+
+.overview-section-content > * {
+    flex: 1;
+}
+
+.overview-section-item {
+    padding: 2.78vw 2.08vw;
+    background: #FFFFFF;
+    border-radius: 1.11vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.overview-section-item-header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: #5D32DC;
+}
+
+.overview-section-item-header-number {
+    font-weight: 600;
+    justify-self: center;
+    font-size: 1.52vw;
+}
+
+.overview-section-item-header-label {
+    font-size: 2.1vw;
+    font-weight: 700;
+}
+
+.overview-section-item-title {
+    text-align: center;
+    font-size: 2.1vw;
+    font-weight: 600;
+}
+
+.overview-section-item-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-section-item-image-wrapper img{
+    align-self: center;
+}
+
+.overview-section-item-text {
+    font-weight: 400;
+    line-height: 1.33;
+    font-size: 1.25vw;
+}
+
+.overview-section-item-bullets {
+    display: flex;
+    flex-flow: column;
+    gap: 1.2vw
+}
+
+.overview-section-item-bullets h1{
+    font-weight: 700;
+    font-size: 1.25vw;
+}
+
+.overview-section-bullet {
+    display: flex;
+    flex-flow: row;
+    gap: 1.15vw;
+    font-size: 1.15vw;
+}
+
+.overview-section-bullet-svg-wrapper {
+    width: 1.53vw;
+    height: 1.53vw;
+    flex-shrink: 0;
+}
+
+.overview-section-bullet-svg-wrapper svg{
+    width: 100%;
+    height: auto;
 }
 
 .feature-section-title{
@@ -532,4 +656,351 @@ header {
     font-size: 1.53vw;
     line-height: 2.3vw;
     color: #3d3d4f
+}
+
+.benefits-section{
+    position: relative;
+    width: 100%;
+    padding: 10vw 7vw 15vw;
+    overflow: hidden;
+}
+
+.benefits-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.benefits-background-logo-container{
+    position: relative;
+    justify-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.benefits-background-logo-wrapper{
+    position: absolute;
+    justify-items: center;
+    align-content: center;
+    --x-offset: 0;
+    --y-offset: 0;
+    --scale: 1;
+    transform: translate(var(--x-offset),var(--y-offset)) scale(var(--scale));
+    width: 40vw;
+    max-width: 70vh;
+}
+
+.benefits-background-logo{
+    width: 100%;
+    height: auto;
+}
+
+.benefits-title{
+    font-family: Figtree, sans-serif;
+    line-height: 110%;
+    padding-bottom: 5vw;
+    background: linear-gradient(90deg, #5631DE 0%, #C748B8 49.5%, #ED7982 99%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: max-content;
+}
+
+.benefits-title h1{
+    font-weight: 700;
+    font-size: 3.47vw;
+    line-height: 1.1;
+    width: auto;
+}
+
+.benefits-title h1 span{
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.benefits-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+
+.benefits-center-logo{
+    justify-content: center;
+    display: flex;
+}
+
+.benefits-center-logo-wrapper{
+    position: relative;
+    width: 41vw;
+    z-index: 2;
+}
+
+.benefits-center-logo-wrapper img{
+    width: 100%;
+}
+
+.benefits-cards-container{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 3;
+}
+
+.benefits-card{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    background: #E6E8F380;
+    padding: 1.52vw 1.8vw 1.8vw;
+    border-radius: min(1.38vw, 20px);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 110%;
+    gap: 0.7vw;
+    color: #3D3D4F;
+    transform: translate(-50%, -50%);
+    width: max-content;
+}
+
+.benefits-card strong{
+    font-weight: 600;
+    line-height: 100%;
+    padding-bottom: 0.1vw;
+}
+
+.benefits-card h1{
+    font-weight: 600;
+    font-size: 3.05vw;
+    line-height: 100%;
+}
+
+.benefits-card-svg-wrapper{
+    width: 3vw;
+    height: 3vw;
+}
+
+.benefits-card-svg-wrapper svg{
+    width: 100%;
+    height: 100%;
+}
+
+#amplihire-benefits-card-1{
+    transform: translate(-10vw, 24vw);
+}
+
+#amplihire-benefits-card-2{
+    transform: translate(18vw, 13vw);
+}
+
+#amplihire-benefits-card-3{
+    transform: translate(-15vw, -1vw);
+}
+
+#amplihire-benefits-card-4{
+    transform: translate(13vw, -8vw);
+}
+
+.request-demo-section{
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 11vw 7vw;
+    justify-content: space-between;
+}
+
+.amplihire-background{
+    background: #5D32DC;
+}
+
+.request-demo-text-section{
+    width: 60%;
+    font-family: Figtree, sans-serif;
+    font-weight: 400;
+    font-size: 1.67vw;
+    color: white;
+    line-height: 150%;
+}
+
+.request-demo-text-wrapper{
+    display: flex;
+    flex-flow: column;
+    gap: 1vw;
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateZ(0);
+    opacity: 0;
+    transition: all 0.4s linear;
+    transform-origin: center bottom;
+}
+
+.request-demo-text-wrapper.active {
+    transform: rotateX(0deg) translateZ(0);
+    opacity: 1;
+}
+
+.request-demo-text-section h1{
+    font-weight: 500;
+    font-size: 3.75vw;
+    line-height: 110%;
+}
+
+.request-demo-text-section p{
+    font-weight: 300;
+}
+
+.request-demo-button{
+    width: 30%;
+}
+
+.request-demo-button-section.active .request-demo-contact {
+    transform: rotateX(0deg) translateZ(0);
+    opacity: 1;
+}
+
+.request-demo-contact {
+    transform-style: preserve-3d;
+    transform: rotateX(90deg) translateZ(0);
+    opacity: 0;
+    transition: all 0.4s linear;
+    transform-origin: center bottom;
+}
+
+.request-demo-button-section{
+    padding-top: 1px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#book-a-demo-amplihire:hover svg{
+    fill: #5c32da;
+}
+
+#book-a-demo-amplihire:hover span{
+    color: #5c32da;
+}
+
+
+footer {
+    background-color: #000;
+    padding: 0 7vw;
+    min-height: 60vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+
+footer .contact-info p.text-hello {
+    display: block;
+    color: #FFF;
+    font-size: 1.52vw;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+footer .contact-info p {
+    color: #9B9B9B;
+    font-size: 1.112vw;
+    font-weight: 500;
+    line-height: 142%;
+
+}
+
+.social-icon {
+    text-decoration: none;
+    margin-top: 2.5vh;
+    display: inline-block;
+    width: 1.53vw;
+    margin-right: 1.3vw;
+}
+
+.social-icon svg {
+    width: 100%;
+    height: 100%;
+}
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6vh;
+    z-index: 100;
+}
+
+.post-footer a{
+    color: #FFF;
+    font-size: 1.112vw;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: auto;
+    margin-right: 2.01vw;
+}
+
+.post-footer p {
+    color: #9B9B9B;
+    font-size: 1.112vw;
+    font-weight: 500;
+}
+
+.tell-us-about-it {
+    padding-top: 11vw;
+}
+
+.tell-us-about-it h1 {
+    color: #FFF;
+    font-size: 4.86vw;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.tell-us-about-it a {
+    color: #FFF;
+    font-size: 4.86vw;
+    font-weight: 300;
+    line-height: 110%;
+    position: relative;
+    text-decoration: none;
+}
+
+.tell-us-about-it.active a::after {
+    width: 100%;
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-navigation {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.footer-navigation div:not(:last-child) {
+    margin-right: 1.67vw;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-hello span:nth-of-type(even){
+    display: none;
 }
