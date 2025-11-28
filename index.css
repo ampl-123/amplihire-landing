@@ -21,11 +21,14 @@ html {
 
 header {
     position: fixed;
-    width: 100%;
     top: 0;
-    background-color: #F5F7FF;
+    width: 100%;
+    background: rgba(245, 247, 255, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     z-index: 10000;
 }
+
 
 .header-container {
     width: 100%;
@@ -574,7 +577,6 @@ header {
 }
 
 .feature-image-section{
-
     align-content: center;
     animation-name: slideInLeft;
     transform: translateX(-100px);
@@ -619,7 +621,7 @@ header {
 .feature-image-background{
     background: #E4E8F6;
     border-radius: 2.8vw;
-    width: 44vw;
+    width: 44.38vw;
     height: 31.25vw;
     justify-content: center;
     align-items: center;
@@ -914,6 +916,9 @@ footer {
     justify-content: space-between;
 }
 
+footer > *:not(:last-child){
+    margin-bottom: 6vw;
+}
 
 footer .contact-info p.text-hello {
     display: block;
