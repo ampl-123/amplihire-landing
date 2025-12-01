@@ -22,7 +22,10 @@ html {
 header {
     position: fixed;
     top: 0;
+    left: -1vw;
+    border-radius: 5vw;
     width: 100%;
+    margin: 0.5vw 1vw;
     background: rgba(245, 247, 255, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -499,7 +502,6 @@ header {
 
 .overview-section-item-image-wrapper img{
     align-self: center;
-    width: 100%;
     height: auto;
 }
 
