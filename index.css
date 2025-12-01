@@ -29,6 +29,7 @@ header {
     background: rgba(245, 247, 255, 0.6);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    box-shadow: #c9c8c854 0px 2px 30px;
     z-index: 10000;
 }
 
