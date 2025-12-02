@@ -26,7 +26,7 @@ header {
     justify-content: center;
     position: fixed;
     z-index: 1000;
-    padding: 1vw 7vw 0;
+    padding: 2vw 7vw 0;
 }
 
 .header-container {
@@ -34,7 +34,7 @@ header {
     width: 100%;
     background: rgba(245, 247, 255, 0.7);
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(8px);
     box-shadow: #c9c8c854 0px 2px 30px;
     display: flex;
     justify-content: space-between;
