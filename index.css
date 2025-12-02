@@ -20,22 +20,22 @@ html {
 }
 
 header {
-    position: fixed;
     top: 0;
-    left: -1vw;
-    border-radius: 5vw;
     width: 100%;
-    margin: 0.5vw 1vw;
-    background: rgba(245, 247, 255, 0.6);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: #c9c8c854 0px 2px 30px;
-    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
 }
 
-
 .header-container {
-    width: 100%;
+    border-radius: 5vw;
+    width: 80%;
+    margin: 0.5vw 1vw;
+    background: rgba(245, 247, 255, 0.1);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: #c9c8c854 0px 2px 30px;
     display: flex;
     justify-content: space-between;
     padding: 1.36vw 5.625vw 1.36vw 5.625vw;
@@ -62,7 +62,7 @@ header {
     align-items: center;
     font-family: Figtree, sans-serif;
     font-weight: 600;
-    font-size: 1.39vw;
+    font-size: 1.1vw;
     line-height: 1.25;
     border: 1px solid transparent;
     padding: 0.83vw 1.66vw 0.83vw 1.66vw;
@@ -103,6 +103,7 @@ header {
 }
 
 .hero-section{
+    position: relative;
     display: flex;
     flex-flow: row;
     width: 100%;
@@ -111,6 +112,7 @@ header {
     overflow-x: hidden;
     background: #F5F7FF;
     padding: 8.4vw 0;
+    z-index: 10;
 }
 
 .hero-headline-container{
@@ -422,6 +424,8 @@ header {
 .overview-section {
     width: 100%;
     padding: 7.4vw 7vw 7.4vw;
+    z-index: 10;
+    position: relative;
 }
 
 .overview-section-header {
@@ -724,6 +728,10 @@ header {
     height: auto;
 }
 
+.benefits-fixed-logo-wrapper{
+    display: none;
+}
+
 .benefits-title{
     font-family: Figtree, sans-serif;
     line-height: 110%;
@@ -732,6 +740,8 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     width: max-content;
+    z-index: 10;
+    position: relative;
 }
 
 .benefits-title h1{
@@ -1029,4 +1039,256 @@ footer .contact-info p {
 
 .text-hello span:nth-of-type(even){
     display: none;
+}
+
+@media screen and (max-width: 680px) {
+    .contact-link {
+        display: flex;
+        width: max-content;
+        align-items: center;
+        gap: max(8px, 0.55vw);
+        padding: 3.5vw 7vw;
+        border: 1px solid white;
+        border-radius: 10vw;
+    }
+    .contact-link span {
+        font-size: 4vw;
+        font-weight: 700;
+    }
+    .screen-section{
+        position: relative;
+        z-index: 5;
+    }
+    .screen-header-background-images {
+        display: none;
+    }
+    .screen-header-title h1,
+    .feature-section-title h1{
+        font-size: 7vw;
+    }
+    .screen-header-text {
+        font-size: 4vw;
+        line-height: 6vw;
+        margin-top: 2vw;
+        width: 100%;
+    }
+    .screen-header-text br {
+        display: none;
+    }
+
+    .screen-header {
+        padding: 20vw 8vw;
+    }
+    .screen-image-wrapper {
+        padding-bottom: 20vw;
+    }
+
+    .overview-section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .features-section {
+        padding: 15vw 6vw;
+        position: relative;
+        z-index: 5;
+    }
+
+    .feature-section-title {
+        line-height: unset;
+    }
+
+    .feature-section-title h1 {
+        font-size: 9vw;
+    }
+
+    .features-section > div:last-child{
+        padding-bottom: 0;
+    }
+
+    .feature {
+        flex-flow: column;
+        gap: 6vw;
+        padding-bottom: 12vw;
+    }
+
+
+    .feature-image-section {
+        width: 100%;
+    }
+
+    .feature-text-section {
+        width: 100%;
+        padding: 0 2vw;
+    }
+
+    .feature-image-background {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-header h2 {
+        font-size: 7vw;
+    }
+
+    .feature-text strong {
+        font-size: 4vw;
+        line-height: normal;
+    }
+
+    .feature-text {
+        font-size: 4vw;
+        line-height: 6vw;
+    }
+
+    .feature-image-background {
+        padding: 2vw;
+        border-radius: 4vw;
+    }
+
+    .benefits-section{
+        padding: 15vw 0;
+    }
+
+    .benefits-title{
+        line-height: unset;
+        width: 100%;
+        padding: 0 8vw 6vw;
+    }
+
+    .benefits-title h1{
+        font-weight: 600;
+        font-size: 10vw;
+        text-align: center;
+    }
+
+    .benefits-cards-container{
+        position: relative;
+        flex-flow: column;
+        gap: 3vw;
+        padding: 3vw 8vw 3vw;
+    }
+
+    .benefits-cards-wrapper{
+        width: 100%;
+    }
+
+    .benefits-card{
+        position: relative;
+        font-size: 4.5vw;
+        text-align: center;
+        transform: none;
+        padding: 7vw 3vw;
+        gap: 3vw;
+        width: 100%;
+        align-items: center;
+        border-radius: 5vw;
+    }
+
+    .benefits-card-svg-wrapper{
+        width: 12vw;
+        height: 12vw;
+    }
+
+    .benefits-background{
+        background: radial-gradient(
+                circle,
+                rgba(255, 255, 255, 0) 0%,
+                rgba(255, 255, 255, 0.15) 50%,
+                rgba(255, 255, 255, 0.35) 65%,
+                rgba(255, 255, 255, 0.6) 80%,
+                rgba(255, 255, 255, 1) 100%
+        );
+        z-index: 3;
+    }
+
+    .benefits-background-logo-container{
+        display: none;
+    }
+
+    #amplihire-benefits-card-1{
+        transform: none;
+        align-self: flex-start;
+    }
+
+    #amplihire-benefits-card-2{
+        transform: none;
+        align-self: flex-end;
+    }
+
+    #amplihire-benefits-card-3{
+        transform: none;
+        align-self: flex-start;
+    }
+
+    #amplihire-benefits-card-4{
+        transform: none;
+        align-self: flex-end;
+    }
+
+    .benefits-card h1{
+        font-size: 9vw;
+    }
+
+    .benefits-center-logo {
+        /*        justify-content: center;
+                display: flex;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;*/
+        display: none;
+    }
+
+    .benefits-center-logo-wrapper{
+        width:80%;
+    }
+    .benefits-background-logo-wrapper{
+        width: 100%;
+        top: 50%;
+    }
+
+    .benefits-fixed-logo-wrapper{
+        display: unset;
+        width: 100%;
+        height: 100svh;
+        position: fixed;
+        align-content: center;
+        z-index: 2;
+        padding: 0 2vw;
+    }
+
+    .benefits-fixed-logo{
+        width: 100%;
+    }
+
+    .request-demo-section{
+        flex-flow: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        position: relative;
+        z-index: 5;
+    }
+    .request-demo-text-section{
+        font-size: 4vw;
+        width: 100%;
+
+    }
+    .request-demo-text-section h3{
+        font-size: 7.5vw;
+    }
+    .request-demo-text-section br{
+        display: none;
+    }
+    .contact-link.contact-link-big span{
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+
+    footer{
+        z-index: 5;
+        position: relative;
+    }
 }
