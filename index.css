@@ -26,19 +26,19 @@ header {
     justify-content: center;
     position: fixed;
     z-index: 1000;
-    padding: 2vw 7vw 0;
+    padding: 1.3vw 3.125vw 0;
 }
 
 .header-container {
     border-radius: 5vw;
     width: 100%;
-    background: rgba(245, 247, 255, 0.7);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(8px);
-    box-shadow: #c9c8c854 0px 2px 30px;
+    background: rgba(243, 245, 255, 0.3);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid #FFFFFF80;
     display: flex;
     justify-content: space-between;
-    padding: 1.36vw 5.625vw 1.36vw 5.625vw;
+    padding: 1.1vw 1.1vw 1.1vw 2.8vw;
 }
 
 .header-logo-wrapper {
