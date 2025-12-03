@@ -214,6 +214,10 @@ header {
     width: 100%;
 }
 
+#contact-page-send {
+    padding: 1.1vw 2.8vw 1.1vw 2.85vw;
+}
+
 .contact-link {
     display: flex;
     width: max-content;
