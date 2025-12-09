@@ -1357,7 +1357,15 @@ footer .text-hello span:nth-of-type(even),
 }
 
 .privacy-policy h2 {
-    margin-bottom: 1vw;
+    margin-bottom: 3vw;
+}
+
+.privacy-policy h3 {
+    font-size: 2.5vw;
+}
+
+.privacy-policy h4 {
+    font-size: 2vw;
 }
 
 .privacy-policy span {
@@ -1371,6 +1379,10 @@ footer .text-hello span:nth-of-type(even),
 
 .privacy-policy ul li{
     margin-bottom: 1vw;
+}
+
+.cursive {
+    font-style: italic;
 }
 
 @media screen and (max-width: 680px) {
