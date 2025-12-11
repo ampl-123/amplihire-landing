@@ -265,7 +265,6 @@ header {
 }
 
 .contact-link span {
-    height: 1.94vw;
     line-height: 1;
     align-content: center;
     position: relative;
@@ -447,6 +446,7 @@ header {
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 0.76vw;
+    text-align: center;
 }
 
 .overview-section-header-text {
@@ -454,6 +454,8 @@ header {
     font-size: 1.5vw;
     font-weight: 400;
     line-height: 1.45;
+    text-align: center;
+    justify-self: center;
 }
 
 .overview-section-header-title span{
@@ -463,7 +465,7 @@ header {
 
 .overview-section-content {
     display: flex;
-    gap: 1.875vw;
+    flex-flow: column;
 }
 
 .overview-section-content > * {
@@ -471,19 +473,29 @@ header {
 }
 
 .overview-section-item {
-    padding: 2.78vw 2.08vw;
-    background: #FFFFFF;
-    border-radius: 2vw;
+    padding: 10vw 0vw;
     display: flex;
-    flex-direction: column;
     gap: 2vw;
+}
+.overview-section-item:not(:first-child) {
+    border-top: 1px solid #cccccc;
+}
+
+.overview-section-item-description {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.overview-section-item-description {
+    margin-bottom: 2vw;
 }
 
 .overview-section-item-header {
     display: flex;
     flex-flow: column;
-    align-items: center;
-    color: #5D32DC;
+    align-items: flex-start;
+    color: #3D3D4F;
 }
 
 .overview-section-item-header-number {
@@ -493,14 +505,15 @@ header {
 }
 
 .overview-section-item-header-label {
-    font-size: 2.1vw;
+    font-size: 2.92vw;
     font-weight: 700;
+    width: 14vw;
 }
 
 .overview-section-item-title {
-    text-align: center;
     font-size: 2.1vw;
     font-weight: 600;
+    margin-bottom: 1.38vw;
 }
 
 .overview-section-item-image-wrapper {
@@ -508,18 +521,18 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.5vw;
 }
 
 .overview-section-item-image-wrapper img{
     align-self: center;
-    height: auto;
+    height: 100%;
 }
 
 .overview-section-item-text {
     font-weight: 400;
     line-height: 1.33;
     font-size: 1.25vw;
+    margin-bottom: 1.38vw;
 }
 
 .overview-section-item-bullets {
@@ -1387,6 +1400,28 @@ footer .text-hello span:nth-of-type(even),
 }
 
 @media screen and (max-width: 680px) {
+    header {
+        padding: 16px 32px 0;
+    }
+    .header-container {
+        border-radius: 20px;
+        justify-content: space-between;
+        padding: 8px 16px 8px;
+    }
+    .header-navigation {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .header-logo-wrapper {
+        display: none;
+    }
+    .nav-item {
+        font-size: 16px;
+        padding: 8px 20px 8px;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+    }
     .contact-link {
         display: flex;
         width: max-content;
@@ -1397,8 +1432,61 @@ footer .text-hello span:nth-of-type(even),
         border-radius: 10vw;
     }
     .contact-link span {
-        font-size: 4vw;
+        font-size: 16px;
         font-weight: 700;
+    }
+    .contact-link svg{
+        width: 4vw;
+        height: 4vw;
+    }
+    .contact-link.contact-link-big span{
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+    .hero-section {
+        flex-flow: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-image-container {
+        width: 100%;
+        padding: 0 6vw;
+    }
+    .hero-image-wrapper {
+        width: 100%;
+        height: auto;
+    }
+    .hero-image {
+        position: relative;
+        padding: 12vw 6vw 0;
+    }
+    .hero-headline-container {
+        width: 100%;
+        padding: 10vw 6vw;
+    }
+    .hero-headline-wrapper div:not(:last-child) {
+        margin-bottom: 5vw;
+    }
+    .hero-header {
+        border-radius: 32px;
+        padding: 12px 24px 12px 24px;
+    }
+    .hero-header-icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 16px;
+    }
+    .hero-header h2 {
+        font-size: 16px;
+    }
+    .hero-title h1{
+        font-size: 32px;
+    }
+    .hero-title span{
+        font-size: 32px;
+    }
+    .hero-seller p {
+        font-size: 16px;
     }
     .screen-section{
         position: relative;
@@ -1619,21 +1707,62 @@ footer .text-hello span:nth-of-type(even),
     .request-demo-text-section{
         font-size: 4vw;
         width: 100%;
-
     }
-    .request-demo-text-section h3{
+    .request-demo-text-section h1{
         font-size: 7.5vw;
-    }
-    .request-demo-text-section br{
-        display: none;
+        margin-bottom: 20px;
     }
     .contact-link.contact-link-big span{
         font-size: 3.5vw;
         font-weight: 700;
     }
-
     footer{
         z-index: 5;
         position: relative;
+        min-height: 80vh;
+    }
+    footer > *:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .footer-content {
+        flex-flow: column;
+    }
+    .contact-info{
+        margin-bottom: 12vh;
+    }
+    footer .contact-info p.text-hello {
+        font-size: 20px;
+    }
+    .footer-navigation {
+        font-size: 12px;
+        align-items: center;
+    }
+    .footer-social-info {
+        margin-bottom: 3vh;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-social {
+        justify-content: flex-start;
+    }
+    .social-icon {
+        width: 30px;
+    }
+    .post-footer {
+        flex-flow: column;
+        justify-content: center;
+    }
+    .post-footer .navigation{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3vh;
+    }
+    .post-footer a {
+        font-size: 14px;
+    }
+    .post-footer p {
+        margin-top: 20px;
+        font-size: 14px;
+        align-self: center;
     }
 }
