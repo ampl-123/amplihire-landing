@@ -1519,6 +1519,64 @@ footer .text-hello span:nth-of-type(even),
     .overview-section {
         width: 100%;
         overflow-x: hidden;
+        padding: 20vw 7.4vw 20vw;
+    }
+
+    .overview-section-header {
+        width: 100%;
+    }
+
+    .overview-section-header-title {
+        font-size: 7vw;
+    }
+
+    .overview-section-header-text {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .overview-section-item {
+        flex-flow: column;
+    }
+
+    .overview-section-item-header {
+        margin-bottom: 3vw;
+    }
+
+    .overview-section-item-header-number {
+        font-size: 6vw;
+    }
+
+    .overview-section-item-header-label {
+        font-size: 6vw;
+    }
+
+    .overview-section-item-image-wrapper {
+        margin-bottom: 3vw;
+    }
+
+    .overview-section-item-title {
+        font-size: 6vw;
+    }
+
+    .overview-section-item-text {
+        font-size: 4vw;
+    }
+
+    .overview-section-item-bullets h1 {
+        font-size: 4vw;
+    }
+
+    .overview-section-bullet {
+        font-size: 4vw;
+    }
+
+    .overview-section-bullet-svg-wrapper {
+        width: 4vw;
+    }
+
+    .overview-section-item-image-wrapper img {
+        width: 75vw;
     }
 
     .features-section {
