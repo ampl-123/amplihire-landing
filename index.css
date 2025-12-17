@@ -1403,18 +1403,22 @@ footer .text-hello span:nth-of-type(even),
     header {
         padding: 16px 32px 0;
     }
+
     .header-container {
         border-radius: 20px;
         justify-content: space-between;
         padding: 8px 16px 8px;
     }
+
     .header-navigation {
         width: 100%;
         justify-content: space-between;
     }
+
     .header-logo-wrapper {
         display: none;
     }
+
     .nav-item {
         font-size: 16px;
         padding: 8px 20px 8px;
@@ -1422,6 +1426,7 @@ footer .text-hello span:nth-of-type(even),
         justify-content: center;
         align-items: center;
     }
+
     .contact-link {
         display: flex;
         width: max-content;
@@ -1431,80 +1436,100 @@ footer .text-hello span:nth-of-type(even),
         border: 1px solid white;
         border-radius: 10vw;
     }
+
     .contact-link span {
         font-size: 16px;
         font-weight: 700;
     }
-    .contact-link svg{
+
+    .contact-link svg {
         width: 4vw;
         height: 4vw;
     }
-    .contact-link.contact-link-big span{
+
+    .contact-link.contact-link-big span {
         font-size: 3.5vw;
         font-weight: 700;
     }
+
     .hero-section {
         flex-flow: column-reverse;
         justify-content: center;
         align-items: center;
     }
+
     .hero-image-container {
         width: 100%;
         padding: 0 6vw;
     }
+
     .hero-image-wrapper {
         width: 100%;
         height: auto;
     }
+
     .hero-image {
         position: relative;
         padding: 12vw 6vw 0;
     }
+
     .hero-headline-container {
         width: 100%;
         padding: 10vw 6vw;
     }
+
     .hero-headline-wrapper div:not(:last-child) {
         margin-bottom: 5vw;
     }
+
     .hero-header {
         border-radius: 32px;
         padding: 12px 24px 12px 24px;
     }
+
     .hero-header-icon {
         width: 16px;
         height: 16px;
         margin-right: 16px;
     }
+
     .hero-header h2 {
         font-size: 16px;
     }
-    .hero-title h1{
+
+    .hero-title h1 {
         font-size: 32px;
     }
-    .hero-title span{
+
+    .hero-title span {
         font-size: 32px;
     }
+
     .hero-seller p {
         font-size: 16px;
     }
-    .screen-section{
+
+    .screen-section {
         position: relative;
         z-index: 5;
     }
+
     .screen-header-background-images {
         display: none;
     }
+
     .screen-header-title h1,
-    .feature-section-title h1{
+    .feature-section-title h1 {
         font-size: 7vw;
     }
+
     .screen-header-text {
         font-size: 4vw;
         line-height: 6vw;
         margin-top: 2vw;
         width: 100%;
     }
+
     .screen-header-text br {
         display: none;
     }
@@ -1512,6 +1537,7 @@ footer .text-hello span:nth-of-type(even),
     .screen-header {
         padding: 20vw 8vw;
     }
+
     .screen-image-wrapper {
         padding-bottom: 20vw;
     }
@@ -1593,7 +1619,7 @@ footer .text-hello span:nth-of-type(even),
         font-size: 9vw;
     }
 
-    .features-section > div:last-child{
+    .features-section > div:last-child {
         padding-bottom: 0;
     }
 
@@ -1637,34 +1663,34 @@ footer .text-hello span:nth-of-type(even),
         border-radius: 4vw;
     }
 
-    .benefits-section{
+    .benefits-section {
         padding: 15vw 0;
     }
 
-    .benefits-title{
+    .benefits-title {
         line-height: unset;
         width: 100%;
         padding: 0 8vw 6vw;
     }
 
-    .benefits-title h1{
+    .benefits-title h1 {
         font-weight: 600;
         font-size: 10vw;
         text-align: center;
     }
 
-    .benefits-cards-container{
+    .benefits-cards-container {
         position: relative;
         flex-flow: column;
         gap: 3vw;
         padding: 3vw 8vw 3vw;
     }
 
-    .benefits-cards-wrapper{
+    .benefits-cards-wrapper {
         width: 100%;
     }
 
-    .benefits-card{
+    .benefits-card {
         position: relative;
         font-size: 4.5vw;
         text-align: center;
@@ -1676,12 +1702,12 @@ footer .text-hello span:nth-of-type(even),
         border-radius: 5vw;
     }
 
-    .benefits-card-svg-wrapper{
+    .benefits-card-svg-wrapper {
         width: 12vw;
         height: 12vw;
     }
 
-    .benefits-background{
+    .benefits-background {
         background: radial-gradient(
                 circle,
                 rgba(255, 255, 255, 0) 0%,
@@ -1693,54 +1719,48 @@ footer .text-hello span:nth-of-type(even),
         z-index: 3;
     }
 
-    .benefits-background-logo-container{
+    .benefits-background-logo-container {
         display: none;
     }
 
-    #amplihire-benefits-card-1{
+    #amplihire-benefits-card-1 {
         transform: none;
         align-self: flex-start;
     }
 
-    #amplihire-benefits-card-2{
+    #amplihire-benefits-card-2 {
         transform: none;
         align-self: flex-end;
     }
 
-    #amplihire-benefits-card-3{
+    #amplihire-benefits-card-3 {
         transform: none;
         align-self: flex-start;
     }
 
-    #amplihire-benefits-card-4{
+    #amplihire-benefits-card-4 {
         transform: none;
         align-self: flex-end;
     }
 
-    .benefits-card h1{
+    .benefits-card h1 {
         font-size: 9vw;
     }
 
     .benefits-center-logo {
-        /*        justify-content: center;
-                display: flex;
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;*/
         display: none;
     }
 
-    .benefits-center-logo-wrapper{
-        width:80%;
+    .benefits-center-logo-wrapper {
+        width: 80%;
     }
-    .benefits-background-logo-wrapper{
+
+    .benefits-background-logo-wrapper {
         width: 100%;
         top: 50%;
     }
 
-    .benefits-fixed-logo-wrapper{
+    .benefits-fixed-logo-wrapper {
         display: unset;
         width: 100%;
         height: 100svh;
@@ -1750,11 +1770,11 @@ footer .text-hello span:nth-of-type(even),
         padding: 0 2vw;
     }
 
-    .benefits-fixed-logo{
+    .benefits-fixed-logo {
         width: 100%;
     }
 
-    .request-demo-section{
+    .request-demo-section {
         flex-flow: column;
         justify-content: center;
         align-items: flex-start;
@@ -1762,65 +1782,221 @@ footer .text-hello span:nth-of-type(even),
         position: relative;
         z-index: 5;
     }
-    .request-demo-text-section{
+
+    .request-demo-text-section {
         font-size: 4vw;
         width: 100%;
     }
-    .request-demo-text-section h1{
+
+    .request-demo-text-section h1 {
         font-size: 7.5vw;
         margin-bottom: 20px;
     }
-    .contact-link.contact-link-big span{
+
+    .contact-link.contact-link-big span {
         font-size: 3.5vw;
         font-weight: 700;
     }
-    footer{
+
+    footer {
         z-index: 5;
         position: relative;
         min-height: 80vh;
     }
+
     footer > *:not(:last-child) {
         margin-bottom: 40px;
     }
+
     .footer-content {
         flex-flow: column;
     }
-    .contact-info{
+
+    .contact-info {
         margin-bottom: 12vh;
     }
+
     footer .contact-info p.text-hello {
         font-size: 20px;
     }
+
     .footer-navigation {
         font-size: 12px;
         align-items: center;
     }
+
     .footer-social-info {
         margin-bottom: 3vh;
         display: flex;
         justify-content: space-between;
     }
+
     .footer-social {
         justify-content: flex-start;
     }
+
     .social-icon {
         width: 30px;
     }
+
     .post-footer {
         flex-flow: column;
         justify-content: center;
     }
-    .post-footer .navigation{
+
+    .post-footer .navigation {
         display: flex;
         justify-content: space-between;
         margin-bottom: 3vh;
     }
+
     .post-footer a {
         font-size: 14px;
     }
+
     .post-footer p {
         margin-top: 20px;
         font-size: 14px;
         align-self: center;
     }
+
+    #contact-page-contact {
+        display: none;
+    }
+    .contact-form-wrapper {
+        flex-flow: column;
+        padding: 100px 7vw;
+    }
+
+    .contact-title h1 {
+        font-size: 12vw;
+    }
+
+    .contact-content {
+        flex-flow: column;
+    }
+
+    .contact-form-wrapper form {
+        flex-flow: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .contact-link-wrapper {
+        margin-top: 20px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .input-container input {
+        line-height: 45px;
+        font-size: 20px;
+        padding-top: 16px;
+    }
+
+    .input-container input:focus + label,
+    .input-container textarea:focus + label {
+        font-size: 12px;
+    }
+    .input-container label {
+        top: 10px;
+        font-size: 18px;
+    }
+
+    .input-container input:focus + label,
+    .input-container textarea:focus + label {
+        font-size: 10px;
+    }
+
+    .input-container input:not([value=""]):not(:focus) + label,
+    .input-container textarea:not([value=""]):not(:focus) + label {
+        font-size: 10px;
+    }
+
+    .input-container.wrong .validation-message span:last-of-type {
+        left: 10px;
+    }
+
+    textarea {
+        height: 80px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .validation-message {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    #contact-page-send {
+        padding: 5vw 14vw 5vw 14vw;
+    }
+
+    #contact-page-send span{
+        font-size: 20px;
+    }
+
+    #contact-page-send svg {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .contact-info-container {
+        width: 100%;
+    }
+
+    .contact-info-container p {
+        font-size: 24px;
+    }
+
+    .text-hello span{
+        font-size: 20px;
+    }
+
+    .contact-form-wrapper .social-media a {
+        width: 28px;
+    }
+
+    .privacy-policy-section {
+        padding: 100px 7vw;
+    }
+
+    .privacy-policy {
+        padding-right: 0;
+    }
+
+    .privacy-policy-title h1 {
+        font-size: 10vw;
+    }
+
+    .privacy-policy h2 {
+        font-size: 7vw;
+    }
+
+    .privacy-policy h3 {
+        font-size: 7vw;
+    }
+
+    .privacy-policy h4 {
+        font-size: 6vw;
+    }
+
+    .privacy-policy p {
+        font-size: 5vw;
+    }
+
+    .privacy-policy ul {
+        margin-left: 6vw;
+    }
+
+    .privacy-policy li {
+        font-size: 5vw;
+    }
+
+    .privacy-header {
+        padding: 16px 0 0;
+    }
+
 }
