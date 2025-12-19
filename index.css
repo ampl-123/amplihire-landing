@@ -438,7 +438,7 @@ header {
     background: linear-gradient(90deg, #5631DE 0%, #C748B8 49.5%, #ED7982 99%);
     -webkit-background-clip: text;
     background-clip: text;
-    margin-bottom: 6.94vw;
+    margin-bottom: 8vw;
 }
 
 .overview-section-header-title {
@@ -473,12 +473,20 @@ header {
 }
 
 .overview-section-item {
-    padding: 10vw 0vw;
+    padding: 8vw 0vw;
     display: flex;
     gap: 2vw;
 }
 .overview-section-item:not(:first-child) {
     border-top: 1px solid #cccccc;
+}
+
+.overview-section-item:first-child {
+    padding-top: 0;
+}
+
+.overview-section-item:last-child {
+    padding-bottom: 0;
 }
 
 .overview-section-item-description {
