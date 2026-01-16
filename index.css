@@ -1211,7 +1211,7 @@ input:-webkit-autofill:active,
 input:-internal-autofill-selected,
 input:-internal-autofill-previewed {
     background-color: #fff !important;
-    -webkit-box-shadow: 0 0 0 2.08vw #000 inset !important;
+    -webkit-box-shadow: 0 0 0 2.08vw #f3f5fd inset !important;
     color: #000;
 }
 
@@ -1220,7 +1220,7 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active{
     -webkit-background-clip: text;
-    -webkit-text-fill-color: #ffffff;
+    -webkit-text-fill-color: #000000;
     box-shadow: inset 0 0 1.38vw 1.38vw #000;
 }
 
@@ -1244,7 +1244,7 @@ textarea {
     border: none;
     outline: none;
     margin-top: 1.38vw;
-    color: #000;
+    color: #000000;
     font-size: 1.38vw;
 }
 
