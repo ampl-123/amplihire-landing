@@ -2006,5 +2006,10 @@ footer .text-hello span:nth-of-type(even),
     .privacy-header {
         padding: 16px 0 0;
     }
+}
 
+@media screen and (max-width: 580px)  {
+    header {
+        padding: 16px 16px;
+    }
 }
